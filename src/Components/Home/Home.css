@@ -1,0 +1,75 @@
+.home {
+    height: 400px;
+    color: white;
+}
+
+.home-content  {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    margin-top: 120px;
+    width: 1140px;
+}
+
+.home-content h2 {
+    margin-top: 20px;
+    color: turquoise;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.enquiries {
+    background-color: blue;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 4px solid aquamarine;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.enquiries:hover {
+    background-color: lightblue;
+    transition-duration: 0.4s;
+    width: 250px;
+    color: black;
+}
+
+.downloadCV {
+    background-color: purple;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 4px solid pink;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.downloadCV:hover {
+    background-color: plum;
+    transition-duration: 0.4s;
+    width: 250px;
+    color: black;
+}
+
+.downloadCV a {
+    text-decoration: none;
+    color: white;
+}
+
+.downloadCV a:hover {
+    color: black;
+}

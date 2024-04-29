@@ -38,7 +38,7 @@
 
 .enquiries:hover {
     background-color: lightblue;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
     width: 250px;
     color: black;
 }

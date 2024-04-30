@@ -18,9 +18,7 @@ const SidebarList = ({expandSidebar}) => {
                 <ul>
                     <li className='nav-item'><FcHome size={25}/>Home</li>
                     <li className='nav-item'><FcBusinessman size={25}/>About Me</li>
-
                     <li className='nav-item'><FcBullish size={25}/>Work Experience</li>
-                    
                     <li className='nav-item'><FcGenealogy size={25}/>Tech Stack</li>
                     <li className='nav-item'><FcGraduationCap size={25}/>Education</li>
                     <li className='nav-item'><FcDatabase size={25}/>Projects</li>

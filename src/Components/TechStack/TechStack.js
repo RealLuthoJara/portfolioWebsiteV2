@@ -39,9 +39,9 @@ const TechStack = () => {
             <span className="underline"></span>
         </div>
         
-        <div className='row'>
+        <div className='row container'>
             {data.map((item, index)=>(
-                <div className='w-100 col-xl-12 col-lg-6 col-md-6 col-sm-12'>
+                <div className='col-xl-4 col-lg-6 col-md-6 col-sm-12'>
                     <div className='tech-content'>
                         <p>{item.name}</p>
                     </div>

@@ -14,7 +14,7 @@ const TechStack = () => {
             name: 'HTML',
             projects: 'kh', 
             color: 'omodo',
-            backgroundColor: '#000000',
+            backgroundColor: '#ffffff',
         },
         // {
         //     symbol: n,

@@ -13,7 +13,7 @@ const SidebarList = ({expandSidebar}) => {
         {expandSidebar ? (
             <div className='navbar-items '>
                 <div className='sidebar-profile-pic'>
-                    <img src={profilepic} alt='Profile Picture' />
+                    <img src={profilepic} />
                 </div>
                 <ul>
                     <li className='nav-item'><FcHome size={25}/>Home</li>

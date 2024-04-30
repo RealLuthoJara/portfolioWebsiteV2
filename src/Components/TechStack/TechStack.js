@@ -1,6 +1,26 @@
 import React, { useState } from 'react'
 import './TechStack.css'
 
+import html from './Symbols/html.png';
+import css from './Symbols/css.png';
+import js from './Symbols/js.png';
+import react from './Symbols/react.png';
+import angular from './Symbols/angular.png';
+import bootstrap from './Symbols/bootstrap.png';
+import figma from './Symbols/figma.png';
+import git from './Symbols/git.png';
+import github from './Symbols/github.png';
+import jquery from './Symbols/jquery.png';
+import mean from './Symbols/mean.png';
+import mern from './Symbols/mern.png';
+import mui from './Symbols/mui.png';
+import mysql from './Symbols/mysql.png';
+import npm from './Symbols/npm.png';
+import styledComponents from './Symbols/styled-components.png';
+import tailwind from './Symbols/tailwind.png';
+import typescript from './Symbols/typescript.png';
+import wordpress from './Symbols/wordpress.png';
+
 const TechStack = () => {
     const [expandTechStack, setExpandTechStack] = useState(false);
 
@@ -10,7 +30,7 @@ const TechStack = () => {
     
     const data = [
         {
-            symbol: 'n',
+            symbol: html,
             name: 'HTML',
             projects: 'kh', 
             color: 'omodo',

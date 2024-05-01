@@ -17,7 +17,7 @@ import mui from './Symbols/mui.png';
 import mysql from './Symbols/mysql.png';
 import npm from './Symbols/npm.png';
 import styledComponents from './Symbols/styled-components.png';
-import tailwind from './Symbols/tailwind.png';
+import tailwind from './Symbols/tailwind.jpeg';
 import typescript from './Symbols/typescript.png';
 import wordpress from './Symbols/wordpress.png';
 
@@ -36,58 +36,58 @@ const TechStack = () => {
             color: 'omodo',
             backgroundColor: '#ffffff',
         },
-        // {
-        //     symbol: n,
-        //     name: 'CSS',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,
-        // },
-        // {
-        //     symbol: n,
-        //     name: 'JavaScript',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,
-        // },
-        // {
-        //     symbol: n,
-        //     name: 'React',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,        
-        // },
-        // {
-        //     symbol: n,
-        //     name: 'Figma',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,        
-        // },
-        // {
-        //     symbol: n,
-        //     name: 'Bootstrap',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,
-        // },
-        // {
-        //     symbol: n,
-        //     name: 'Tailwind',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,
-        // },
-        // {
-        //     symbol: n,
-        //     name: 'Material UI',
-        //     projects: kh, 
-        //     color: omodo,
-        //     backgroundColor: elivr,        
-        // }, 
+        {
+            symbol: css,
+            name: 'CSS',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',
+        },
+        {
+            symbol: js,
+            name: 'JavaScript',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',
+        },
+        {
+            symbol: react,
+            name: 'React',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',        
+        },
+        {
+            symbol: figma,
+            name: 'Figma',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',        
+        },
+        {
+            symbol: bootstrap,
+            name: 'Bootstrap',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',
+        },
+        {
+            symbol: tailwind,
+            name: 'Tailwind',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',
+        },
+        {
+            symbol: mui,
+            name: 'Material UI',
+            projects: 'kh', 
+            color: 'omodo',
+            backgroundColor: 'elivr',        
+        }, 
     ]
   return (
-    <div className='container techstack-section'>
+    <div className='container tech-stack-section'>
 
         <div className='section-title'>
             <h4>Tech Stack</h4>
@@ -97,15 +97,21 @@ const TechStack = () => {
         <div className='row container'>
             {data.map((item, index)=>(
                 <div className='col-xl-4 col-lg-6 col-md-6 col-sm-12'>
-                    <div onMouseOver={() => toggleExpand(true)} onMouseOut={() => toggleExpand(false)} className={!expandTechStack ? 'tech-content-expand tech-content' : 'tech-content'}>
+                    <div onMouseOver={() => toggleExpand(true)} onMouseOut={() => toggleExpand(false)} className={!expandTechStack ? 'tech-content' : 'tech-content tech-content-expand'}>
 
                     {/* <div onMouseOver={toggleExpand} className= {!expandTechStack ? '.tech-content-expand tech-content' : 'tech-content'}> */}
                         {!expandTechStack ? (
-                        <p>{item.name}
+                        <p>
+                            <div className='tech-stack-symbol'>
+                                <img src={item.symbol} alt='Tech Stack Symbol'/>
+                            </div>
+                            {item.name}
                         </p>
                         ) : (
                         <p>
-                            {item.symbol}
+                            <div className='tech-stack-symbol'>
+                                <img src={item.symbol} alt='Tech Stack Symbol'/>
+                            </div>
                             {item.name}
                             {item.projects}
                             {item.color}

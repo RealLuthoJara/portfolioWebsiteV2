@@ -1,8 +1,8 @@
 .sidebar-profile-pic img{
     border-radius: 90px;
     margin-top: 10px;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     display: flex;
     vertical-align: middle;
     margin: 0 auto;
@@ -13,13 +13,13 @@
 .navbar-items ul li {
     color: white;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 25px;
     cursor: pointer;
+    font-size: 0.8rem;    
 }
 
 .navbar-items ul li svg {
-    margin-right: 25px;
-    margin-left: 10px;    
+    margin: 0 10px;
 }
 
 .navbar-icons-only ul li {

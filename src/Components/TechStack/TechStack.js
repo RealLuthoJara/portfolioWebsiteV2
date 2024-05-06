@@ -17,7 +17,7 @@ import mui from './Symbols/mui.png';
 import mysql from './Symbols/mysql.png';
 import npm from './Symbols/npm.png';
 import styledComponents from './Symbols/styled-components.png';
-import tailwind from './Symbols/tailwind.jpg';
+import tailwind from './Symbols/tailwind.png';
 import typescript from './Symbols/typescript.png';
 import wordpress from './Symbols/wordpress.png';
 

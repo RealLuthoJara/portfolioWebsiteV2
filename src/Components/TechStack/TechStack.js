@@ -21,18 +21,7 @@ import tailwind from './Symbols/tailwind.png';
 import typescript from './Symbols/typescript.png';
 import wordpress from './Symbols/wordpress.png';
 
-const TechStack = () => {
-
-    // Function to toggle selected tech index
-    // const toggleInfo = (index) => {
-    //     if (selectedTechIndex === index) {
-    //     // If already selected, deselect
-    //     setSelectedTechIndex(null);
-    //     } else {
-    //     // Otherwise, select
-    //     setSelectedTechIndex(index);
-    //     }
-    // };
+const TechStack = () => { 
     
     
     //The data for each stack
@@ -94,34 +83,20 @@ const TechStack = () => {
             background: 'linear-gradient(90deg, rgba(18,42,150,1) 45%, rgba(17,185,173,1) 92%)',        
     }, 
     ]
-
-    // This is so that only one expands when I click on the info
-    // const [expandedItems, setExpandedItems] = useState([]);
-    
+ 
     const [expandedIndex, setExpandedIndex] = useState(null);
-
-    // const toggleExpand = (index) => {
-    //     const newExpandedItems = [...expandedItems];
-    //     newExpandedItems[index] = !newExpandedItems[index];
-    //     setExpandedItems(newExpandedItems);
-    // };
 
     const toggleExpand = (index) => {
         if (expandedIndex === index) {
+
             // Collapse if already expanded
             setExpandedIndex(null); 
+
         } else {
             // Expand clicked item
             setExpandedIndex(index); 
         }
     };
-
-    // True or false if it currently expanded
-    // const [expandTechStack, setExpandTechStack] = useState(false);
-
-    // const expandTech = () => {
-    //     setExpandTechStack(!expandTechStack);
-    // };
 
     // To show more teck stack projects
     const [showMoreTech, setShowMoreTech] = useState(3);

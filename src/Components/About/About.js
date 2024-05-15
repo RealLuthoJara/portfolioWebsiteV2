@@ -1,20 +1,23 @@
 import React from "react";
 import "./About.css";
-import ProfilePic from "../../Image/profilepic.JPG";
+import ProfilePic from "../../ProfilePic/profilepic.JPG";
 
 const About = () => {
   return (
-    <div className="container about-section">
-      <div className="row">
+    // Contains entire about section
+    <div id="about" className="container about-section">
 
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          
+      {/* Ensures it is a row and contains info */}
+      <div className="container row about-content">
+
+        {/* Contains profile pic image */}
+        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12"> 
           <div className="about-image">
             <img src={ProfilePic} alt="Profile Pic" />
           </div>
-        
         </div>
 
+        {/* Contains about me info */}
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
           <div className="about-details">
             <h4>About Me</h4>

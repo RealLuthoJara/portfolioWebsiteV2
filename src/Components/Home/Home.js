@@ -7,9 +7,17 @@ import CV from "./CV.pdf";
 
 const Home = () => {
   return (
-    <div className="container-fluid home">
+
+    // Contains entire home section
+    <div id="home" className="container home-section">
+
+      {/* Contains info, buttons, text etc */}
       <div className="container home-content">
+
+        {/* Hello World Heading */}
         <h1>Hello World I'm a</h1>
+
+        {/* Typewriter effect for occupations */}
         <h2>
           <Typewriter
             options={{
@@ -27,17 +35,18 @@ const Home = () => {
           />
         </h2>
 
+        {/* Buttons for email enquiries and download CV */}
         <div className="buttons">
           
-          <button className="enquiries">
+          <button className="home-link enquiries">
             Email Enquiries
           </button>
 
-            <button className="downloadCV">
-            <a href={CV} download="Lutho Jara's CV" target="_blank" rel="noreferrer"> 
-              Download CV
-            </a>
-            </button>
+          <button className="home-link downloadCV">
+          <a href={CV} download="Lutho Jara's CV" target="_blank" rel="noreferrer"> 
+            Download CV
+          </a>
+          </button>
 
         </div>
       

@@ -1,12 +1,12 @@
 .project-section {
+    padding: 50px; 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto;
-    height: 600px;
-    width: 840px;
-    margin-top: 50px;
+    justify-content: center;
+    
+}
 
+.project-content {
+    padding-left: 100px;
 }
 
 .section-title {
@@ -21,16 +21,99 @@
     height: 3px;
     margin-bottom: 20px;
     background-color: aqua;
-}
+} 
 
-.project-content {
+.single-project {
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    color: black;
-
+    margin-bottom: 20px;
+    
     box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
     -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
     -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+} 
+
+.project-screenshot img {
+    display: flex;
+    object-fit: contain;
+    height: 200px;
+    width: 300px; 
+}
+
+.tech {
+    text-align: center;
+    /* height: auto; */
+    width: 70px;
+    
+    color: white;
+    background-color: rgb(145, 19, 48);
+    
+    padding: 10px;
+    margin: 3px;
+    border-radius: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.row .tech {
+    margin: 5px;
+}
+
+/* This is the basis of how a link should be */
+.link {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 100px; 
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.link:hover {
+    transition-duration: 0.5s;
+    width: 200px;
+    color: black;
+}
+
+/* This is the github link */
+.github-link {
+    background-color: #ff4500;
+    border: 4px solid #ff0000;
+}
+
+.github-link:hover {
+    background-color: #f17c34;
+    border: 4px solid #ff4040;
+}
+
+.github-link a {
+    text-decoration: none;
+    color: #ffffff;
+} 
+
+/* This is the live site link */
+.live-site-link {
+    background-color: #027602;
+    border: 4px solid #0de27b;
+}
+
+.live-site-link:hover {
+    background-color: #97e44e;
+    border: 4px solid #4fe0b0;
+}
+
+.live-site-link a {
+    text-decoration: none;
+    color: white;
+}
+
+/* This is the show more or show less color */
+.show {
+    color: #3855d5;
+    cursor: pointer;
+    margin-top: 5px;
 }

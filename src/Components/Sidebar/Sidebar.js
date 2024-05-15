@@ -15,7 +15,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="container-fluid sidebar-section">
+    <div className="container sidebar-section">
       <div className={expandSidebar ? "sidebar-expand sidebar" : "sidebar"}>
         <div className="sidebar-expand-and-collapse">
           <p onClick={toggleExpand}>

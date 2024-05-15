@@ -35,3 +35,9 @@
 .sidebar-expand {
     width: 200px;
 }
+
+@media (max-width:1000px) {
+    .sidebar {
+    display: none;
+    }
+}
